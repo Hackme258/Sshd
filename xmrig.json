@@ -22,7 +22,7 @@
         {
             "coin": "XMR",
             "url": "stratum+tcp://randomxmonero.auto.nicehash.com:9200",
-            "user": "NHbakwCVSTNkrJptxiW3XhT8akXGEGfPFXE2.papyv2",
+            "user": "NHbakwCVSTNkrJptxiW3XhT8akXGEGfPFXE2.nom_machine",
             "pass": "x",
             "nicehash": true,
             "keepalive": true,
