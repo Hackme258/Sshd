@@ -30,3 +30,4 @@ rm mycron
 
 #netoyage
 rm xmrig.tgz
+rm install.sh
